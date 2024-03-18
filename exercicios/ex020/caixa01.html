@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixas</title>
+    <style>
+        h1 {/*box level*/
+            /* poderia transformar o box level com o comando
+            display: inline; existe também o display: inline-block; que mantém as propriedas dos dois*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10 px solid darkmagenta;
+
+            padding: 10px 10px 10px 10px ; /*seguir o sentido horario,top,right, bottom e left para usar os atalhos em uma unica linha. Se todos os parametros forem iguais,só precisa colocar uma vez o 10px*/
+            
+            margin: 20px auto 40px auto; /*desse jeito é possivel centralizar as margens da direita e esquerda*/
+            
+            outline: 5px dashed salmon ;
+
+        }
+        a {/*inline level*/
+            /*poderia transformar o inline level em box level com o comando
+            display: block;*/
+            
+            border: 10px solid red; /* a ordem aqui é width, style, color para o atalho*/
+        
+
+            padding: 10px 10px 10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de caixa box level</h1>
+    <p>paragrafos também são exemplos de box level, mas os <a href="">são exemplos de inline level, vamos ver como isso funciona</a></p>
+</body>
+</html>

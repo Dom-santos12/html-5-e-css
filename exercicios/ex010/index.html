@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Utilizando links externos</h1>
+    <p>você pode usar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external"> repositório publico no github </a></p>
+    
+    <h1>Utilizando links internos</h1>
+    <p>Essa é a primeira pagina do site. Se você quiser, pode também acessar <a href="pag002.html" rel="next">Segunda pagina</a></p> <!--Para um link interno funcionar, precisa estar na mesma pasta e indicar o caminho utilizado, nesses casos, não precisa indicar url por ser algo interno-->
+    <p>Você tambem pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self" >pagina de noticias</a></p> <!--utilizando ctr + space dentro das aspas de href, você mostra as opções, podendo selecionar o link dentro da pasta que criou -->
+    <!--Você tambem pode envelopar uma frase colocando dentro da tag <a> como neste exemplo, virando um link clickavel -->
+    <!--Quando você utiliza target="_self" voce indica para utilizar a mesma aba e não abrir uma nova como é o caso de blank-->
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="Livro/Materia Escura - Blake Crouch.pdf" download="Materia Escura - Blake Crouch.pdf" type="application/pdf" >baixar o livro PDF</a></li>
+        <li><a href="Livro/Materia Escura - Blake Crouch.zip" download="Materia Escura - Black Crouch.zip" type="application.zip" >Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

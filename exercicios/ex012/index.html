@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu próprio servidor</p>
+    <video width="500" height="500" poster="imagens/paisagem,650.png" controls loop> <!--poster server para colocar uma imagem pré definida no inicio do video com a chamada do video-->
+        <source src="midia/Video Vapor.webm" type="video/webm"> <!--igual nas imagens, os videos vão seguir a linha de compatibilidade-->
+        <source src="midia/Video Vapor2.mp4" type="video/mp4">
+        <source src="midia/video vapor.mp4" type="video/mp4"> <!--era pra ter usado o formato ovg, mas não achei pra converter, precisa usar esses tres formatos de compatibilidade-->
+        <p>O seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1> <!--Dessa maneira, você não consumirá seus dados e sim os do youtube, sendo a maneira ideal-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=E_yMGcGUe1y6kXSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

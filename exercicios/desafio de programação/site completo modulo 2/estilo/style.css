@@ -1,0 +1,203 @@
+@charset "UTF-08";
+
+/*
+#c5ebd6
+#83elad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format ('opentype'); /*colocar pontos antes da barra serve para voltar pastas para encontrar arquivos de outras pastas, um ponto pasta atual, dois pontos volta uma pasta*/
+    font-weight: normal;
+
+}
+
+
+:root { /*Posso adicionar variaveis com o comando root, dessa forma posso definir cores para usar com o comando var e usar minha própria paleta de cores*/
+    --cor0:#c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3:#2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrão: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas neue', cursive;
+    --fonte-android: 'Android', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrão);
+}
+
+a.externo::after{ /*Essa configuração faz colocar a imagem dentro dos links internos, basta inserir no codigo html antes do nome que precisa ser linkado*/
+    content: '\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.293);
+    
+}
+
+header>p {
+    color: white;
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.298);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.298);
+}
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s; /*Esse comando altera o tempo de transição de um botão e o outro. Particurlarmente achei um efeito ruim nos botões, mas pode ser util para outros tipos de animações*/
+}
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.431);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;    
+}
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+
+}
+main p {
+    margin: 15px 0px; /*Quando os pares são iguais, não preciso repetir os numeros, exemplo, aqui seria 15px 0px 15px 0px*/
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1;
+    line-height: 1.3em;
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block; /* o display block aqui faz o papel de margin: auto para centralizar, já que o margin não funciona para a imagem*/
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8 px rgba(0, 0, 0, 0.298);
+    
+}
+
+aside h3 { 
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*A margem negativa é util para aumentar as bordas para se encaixarem em outras bordas*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type:'\2705\00A0\00A0'; /*Para funcionar os emojis, eu preciso colocar a barra invertida em volta do numero que consegui no emojipedia, e para dar espaço entre o emoji e o conteudo, utilizo o 00A0, neste caso, usei 2 espaços*/
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer > p > a {/*Posso fazer o caminho para o link > a com a seta ou colocar o a diretamente, acredito que o caminho só seja util caso queira ter paragrafos direntes um do outro*/
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+
+}

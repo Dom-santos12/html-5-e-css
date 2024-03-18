@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-P.png" type="image/png"> <!--sempre coloque um espaço de folga, se a imagem é de 700px, coloque 750px como foi feito aqui-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png"> <!--definindo soucer midia como max widht 1000px, indica que o tamanho maximo deve ser mil representado pela imagem G, mas se for menor, utilizar o tamanho M-->
+        <img src="imagens/foto-G.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>  
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <!--Essa é a forma mais simples de adicionar o audio: <audio src="midias/happy-mistake.mp3" controls autoplay></audio> ,porém, utilizaremos outro formato para garantir mais compatibilidade-->
+    <audio preload="metadata" autoplay controls loop> <!--não utilizar a opção auto, pois vai carregar todos os arquivos, atrasando o site, none, não vai carregar nada sozinho, opte por metadata que vai carregar datas e textos sem prejudicar o site. A opção loop aqui é opcional, caso você queira que ela reinicie automaticamente, porém, ela vai exigir mais do site e servidor, podendo encarecer demais os custos-->
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg"> <!--Você pode utilizar varios formatos diferentes para testar a compatibilidade no navegador, começando pelo primeiro que é o mp3, executado na ordem que é colocado aqui-->
+        <source src="midias/guanacast-33.ogg" type="audio/ogg"> <!--Esse é o segundo formato mais recomendado, executado caso o primeiro não funcione.-->
+        <source src="midias/guanacast-33.wav" type="audio/wav"> <!--não utilizar wave, pois deixa muito pesado, são arquivos gigantes-->
+        <p>infelismente o seu navegador não consegue reproduzir audio. <a href="midias/guanacast-33.mp3">clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>

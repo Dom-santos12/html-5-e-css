@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Sempre que colocar id="" em HTML, será necessário utilizar # para representa-lo em CSS.
+Tudo que for class em HTML = em CSS é .*/
+
+body {
+    background-color: rgba(38, 255, 0, 0.589);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(27, 180, 0);
+
+}
+h1#principal {
+    text-align: center;
+    background-color: white;
+    color: rgb(41, 255, 3);
+
+}
+
+h2 {
+    color: blueviolet;
+
+}

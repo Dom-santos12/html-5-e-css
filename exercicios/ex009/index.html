@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="I">
+        <li>acordar</li>
+        <li>levantar</li>
+        <li>dormir</li>
+    </ol>
+    <ol type="1" > <!--podemos colocar o parametro start após o valor de type e fazer a contagem a partir do numero que colocamos start="10" por exemplo-->
+        <li>acordar <!--a tag li não precisa mais de fechamento, podendo usar as duas formas-->
+        <li>ligar para a leticia</li>
+        jantar <!-- se não colocar li, o parametro de type não será considerado, ficando sem numeração-->
+        <li>dormir</li>
+    </ol>
+    <ol type="a"> <!--também podemos utilizar letras do alfabeto, minuscula "a" ou maiuscula"A"-->
+        <li>acordar</li>
+        <li>levantar</li>
+        <li>dormir</li>
+    </ol>
+
+    <h2>lista não ordenada</h2>
+    <ul> <!--circle é padrão quando não se coloca type, porém, podemos especificar como foi feito no exemplo a seguir-->
+        <li>pão</li>
+        <li>leite</li>
+        <li>ovo</li>
+    </ul>
+    <ul type="circle">
+        <li>pão</li>
+        <li>leite</li>
+        <li>ovo</li>
+    </ul>
+    <ul type="square">
+        <li>pão</li>
+        <li>leite</li>
+        <li>ovo</li>
+    </ul>
+    <ul type="disc">
+        <li>pão</li>
+        <li>leite</li>
+        <li>ovo</li>
+    </ul>
+    <h2>minhas linguagens favoritas </h2>
+    <ol>
+        <li>antigas</li>
+        <ol>
+            <li>Clipper</li>
+            <li>Visual basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>novas</li>
+        <ol>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Java script</li>
+            <li>Kotlin</li>
+        </ol>
+        <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>playstation 1 </li>
+            <ul type="square">
+                <li>ninja</li>
+                <li>dragon ball gt</li>
+                <li>psychic force</li>
+                <li>trilogia crash</li>
+                <li>crash racing</li>
+            </ul>
+            <li>playstation 2</li>
+            <ul type="square">
+                <li>god of war</li>
+                <li>prince of persia</li>
+                <li>need for speed most wanted</li>
+                <li>dragon ball z budokai 2</li>
+                </ul>
+            </ul>
+        </ol>
+        <h2>Lista de definições</h2>
+        <dl> <!--definition list-->
+            <dt>HTML</dt> <!--termo-->
+            <dd>Linguagem de marcação para a criação do conteudo de um site</dd> <!--descrição-->
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criação de interatividade do site</dd>
+        </dl> 
+
+
+</body>
+</html>
